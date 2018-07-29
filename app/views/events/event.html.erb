@@ -1,0 +1,9 @@
+<h1 class="title"><%= Date.today.month + 1%>月のイベントリスト</h1>
+<div class="events-list">
+<% @info.each do | info |%>
+    <div class="event">
+      <div class="event-month"><%= info.date %></div>
+      <div class="event-title"><%= info.title %></div>
+    </div>
+<% end %>
+</div>

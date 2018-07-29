@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 20180721080619) do
 
   create_table "events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "year"
     t.integer "month"
     t.integer "date"
     t.string "title"
